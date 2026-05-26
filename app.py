@@ -6,4 +6,4 @@ st.sidebar.title("Parámetros")
 
 st.write("Elaborado por Jorge Angeles")
 
-Sesion = st.selectbox("Selecione una sesión", ["Sesión 1","Sesión 2","Sesión 3","Sesión 4"]
+Sesion = st.selectbox("Seleccione una sesión", ["Sesión 1","Sesión 2","Sesión 3","Sesión 4"]
