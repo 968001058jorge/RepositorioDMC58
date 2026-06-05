@@ -23,11 +23,14 @@ elif sesion == "Sesión 2":
   precio_final_producto = precio - (precio*(descuento/100))
   
   st.write("El precio final del producto es: ", precio_final_producto )
-  
-  
+    
 
 elif sesion == "Sesión 3":
   st.write("Bienvenido la sesión 3")
+  inicio_rango =st.slider("Seleccione un valor",min_value = 0 , max_value=20, value = 7) 
+
+
+
 
 else:
   st.write("Bienvenido la sesión 4")
