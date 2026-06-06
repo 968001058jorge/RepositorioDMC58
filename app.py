@@ -1,9 +1,12 @@
 import streamlit as st
-import numpy as np
+import pandas as pd
+import numpy as np as lf
+import libreria_funciones
 
 st.title("Mi primera aplicación en python")
 
 st.sidebar.title("Parámetros")
+st.sidebar.image("dmc.png")
 
 st.write("Elaborado por Jorge Angeles")
 
@@ -30,12 +33,20 @@ elif sesion == "Sesión 3":
   st.write("Bienvenido la sesión 3")
   
   fin_rango =st.slider("Seleccione un valor",min_value = 0 , max_value=20, value = 7)
-  
+  st.write(f"Rango seleccionado: {fin_rango}")
   arreglo = np.arange(0, fin_rango)
   
   st.write(arreglo)
-
-
-
+  
+elif sesion == "Sesión 4":
+  st.write("Bienvenido a la sesión 4")
+  principal = st.number_input("Ingrese el monto del préstamo", value=1000)
+  tasa_anual = st.number_input("Ingrese la tasa anual en decimal",value=0.1, min_value=0.0,max_value=1.0 )
+  anios = st.number_input("Ingrese el numero de años del préstamo", value=1)
+  pagos_anio = st.number_input("Ingrese la cantidad de pagos por año", value=12)
+  
+  cuota = lf.cuota_prestamo(principal, tasa_anual, anios, pagos_anio)
+  st.write(f"El valor de la cuota es {cuota}")
+  
 else:
   st.write("Bienvenido la sesión 4")
