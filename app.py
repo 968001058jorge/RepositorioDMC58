@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np as lf
-import libreria_funciones
+import numpy as np
+import libreria_funciones as lf
 
 st.title("Mi primera aplicación en python")
 
