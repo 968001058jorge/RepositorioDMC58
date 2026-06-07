@@ -6,7 +6,7 @@ import libreria_funciones as lf
 st.title("Mi primera aplicación en python")
 
 st.sidebar.title("Parámetros")
-st.sidebar.image("dmc.png")
+
 
 st.write("Elaborado por Jorge Angeles")
 
